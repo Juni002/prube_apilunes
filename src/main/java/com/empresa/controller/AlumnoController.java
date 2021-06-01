@@ -47,7 +47,7 @@ public class AlumnoController {
 	@ResponseBody
 	public ResponseEntity<List<Alumno>> listapoDni(@PathVariable("dni") String dni){
 		List<Alumno> lista =  service.listaPorDni(dni);
-					return ResponseEntity.ok(lista);
+		return ResponseEntity.ok(lista);
 	}
 	
 	@GetMapping("/{id}")
