@@ -42,6 +42,7 @@ public class AlumnoController {
 			return ResponseEntity.notFound().build();
 		}
 	}
+	
 	@GetMapping("/porDni/{dni}")
 	@ResponseBody
 	public ResponseEntity<List<Alumno>> listapoDni(@PathVariable("dni") String dni){
